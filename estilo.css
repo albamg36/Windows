@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("halloween.png");
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.falling-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fall linear forwards;
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
